@@ -1,0 +1,16 @@
+  160  git push
+  161  git checkout -b develop
+  162  touch develop_test.txt
+  163  git add .
+  164  git commit -m "new branch"
+  165  vim develop_test.txt
+  166  git status
+  167  git add .
+  168  git commit -m "has changed"
+  169  git push
+  170  git checkout main
+  171  git merge develop
+  172  git push
+  173  git checkout main
+  174  git merge develop
+  175  git log
